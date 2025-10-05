@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@font-face {
+	font-family: 'SUIT Variable';
+	font-weight: 100 900;
+	src: url('./fonts/SUIT-Variable.woff2') format('woff2-variations');
+}
+
+@font-face {
+	font-family: 'Shorai Sans';
+	font-weight: 400 600;
+	src: url('./fonts/ShoraiSansStdNVar.ttf') format('truetype-variations');
+}
+
+:root {
+  /* 기본 화이트 */
+  --background: #0F0E12;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  /* 이게 도대체 뭘까. 베리어블 같은 거 같은데, 잘 모르겠다. */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+ /* 다크모드 */
+  :root {
+    --background: #0F0E12;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: 'SUIT Variable', 'Shorai Sans', Arial, Helvetica, sans-serif;
+}
+
+/* 아래에서부터 폰트 관련 스타일이 나옵니다. */
+/* 폰트 크기 */
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -0.91px;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.57px;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.46px;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.34px;
+}
+h5 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.28px;
+}
+h6 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.25px;
+}
+p, li, span, a {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.22px;
+}
