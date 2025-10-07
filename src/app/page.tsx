@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex flex-col gap-1">
           <h4>h1</h4>
           <h1>
-            거울 앞에 섰을 때, 반사되는 건 빛뿐이었어.
+            거울 앞에 섰을 때, 반사되는 건 빛뿐이었다.
             <br />
             現実に気づいて、自分が何者でもないって分かった。
             <br />
@@ -24,7 +24,7 @@ export default function Home() {
         <div className="flex flex-col gap-1">
           <h4>h2</h4>
           <h2>
-            거울 앞에 섰을 때, 반사되는 건 빛뿐이었어.
+            거울 앞에 섰을 때, 반사되는 건 빛뿐이었다.
             <br />
             現実に気づいて、自分が何者でもないって分かった。
             <br />
@@ -36,7 +36,7 @@ export default function Home() {
         <div className="flex flex-col gap-1">
           <h4>h3</h4>
           <h3>
-            거울 앞에 섰을 때, 반사되는 건 빛뿐이었어.
+            거울 앞에 섰을 때, 반사되는 건 빛뿐이었다.
             <br />
             現実に気づいて、自分が何者でもないって分かった。
             <br />
@@ -48,7 +48,7 @@ export default function Home() {
         <div className="flex flex-col gap-1">
           <h4>h4</h4>
           <h4>
-            거울 앞에 섰을 때, 반사되는 건 빛뿐이었어.
+            거울 앞에 섰을 때, 반사되는 건 빛뿐이었다.
             <br />
             現実に気づいて、自分が何者でもないって分かった。
             <br />
@@ -60,7 +60,7 @@ export default function Home() {
         <div className="flex flex-col gap-1">
           <h4>h5</h4>
           <h5>
-            거울 앞에 섰을 때, 반사되는 건 빛뿐이었어.
+            거울 앞에 섰을 때, 반사되는 건 빛뿐이었다.
             <br />
             現実に気づいて、自分が何者でもないって分かった。
             <br />
@@ -72,7 +72,7 @@ export default function Home() {
         <div className="flex flex-col gap-1">
           <h4>h6</h4>
           <h6>
-            거울 앞에 섰을 때, 반사되는 건 빛뿐이었어.
+            거울 앞에 섰을 때, 반사되는 건 빛뿐이었다.
             <br />
             現実に気づいて、自分が何者でもないって分かった。
             <br />
@@ -84,7 +84,7 @@ export default function Home() {
         <div className="flex flex-col gap-1">
           <h4>p</h4>
           <p>
-            거울 앞에 섰을 때, 반사되는 건 빛뿐이었어.
+            거울 앞에 섰을 때, 반사되는 건 빛뿐이었다.
             <br />
             現実に気づいて、自分が何者でもないって分かった。
             <br />

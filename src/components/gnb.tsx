@@ -9,7 +9,7 @@ export default function Gnb() {
           <Link href='/' className='flex gap-4 items-center'>
             <img className="w-8.5 h-8.5 rounded-4xl" src="https://avatars.githubusercontent.com/u/71020988?v=4" alt="profile"/>
             <div className='flex gap-2 items-center'>
-              <h5>m_ny29</h5>
+              <h5>m_ny8</h5>
             </div>
           </Link>
           <div className='flex'>
