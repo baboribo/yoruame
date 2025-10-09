@@ -75,6 +75,10 @@ p, li, span, a {
   line-height: 160%;
   font-family: 'SUIT Variable Regular', 'Shorai Sans Regular', Arial, Helvetica, sans-serif;
 }
+p {
+  /* 텍스트 색상 */
+  color: #DADDE5;
+}
 
 :root {
   /* 기본 화이트 */

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Gnb from "@/components/gnb";
+import ChildMotion from "@/components/childmotion"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Yoruame",
-  description: "A personal site by mny29",
+  // description: "A personal site by mny29",
 };
 
 export default function RootLayout({
@@ -23,13 +24,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
-    <html lang="ko-kr">
-          <body
+    <html lang="ko-KR">
+      <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Gnb />
-        {children}
+        <ChildMotion>
+          {children}
+        </ChildMotion>
       </body>
     </html>
   );
