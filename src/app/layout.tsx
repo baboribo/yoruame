@@ -16,7 +16,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Yoruame",
-  // description: "A personal site by mny29",
+  description: "A personal site by mny29",
+  icons: {
+    icon: "/assets/favicons/favicon-bg-none.png"
+  }
 };
 
 export default function RootLayout({
