@@ -1,6 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
+import Gnb from "@/components/gnb";
 import { isLocale } from "@/i18n/routing";
 
 export default async function RootLayout({
@@ -25,9 +26,15 @@ export default async function RootLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <Gnb /> {/* [1] */}
           {children}
         </NextIntlClientProvider>
       </body>
     </html>
   );
 }
+
+/**
+ * Footnotes
+ * [1] Ensures the global navigation receives the i18n context before rendering client-side hooks.
+ */
