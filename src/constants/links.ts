@@ -1,7 +1,18 @@
 // links
 export const gnb = {
   avatarSrc: "/img/avatar/Im-just-watching.jpg",
-};
+  navLinks: [
+    { href: "/", messageKey: "home.title" },
+    { href: "/c", messageKey: "creatives.title" },
+    { href: "/font-size", messageKey: "font-size.title" },
+  ],
+  quickLinks: [
+    { href: "https://sora.yume.place", label: "날씨" },
+  ],
+  socialLinks: [
+    { href: "https://github.com/baboribo", icon: "github", label: "GitHub" },
+  ],
+} as const;
 
 export const notFoundLinks = {
   iconLink:
