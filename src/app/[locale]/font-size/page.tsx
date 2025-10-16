@@ -1,12 +1,15 @@
 "use client"
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 
 export default function fontsizes() {
+  const t = useTranslations("font-size");
+
   return (
     <div>
       <header className="pt-24 pb-5 flex flex-col gap-1">
-        <h3>폰트 사이즈</h3>
-        <p>m_ny29*에서 쓰이는 폰트 크기들을 모아둔 페이지입니다.</p>
+        <h3>{t("title")}</h3>
+        <p>{t("description")}</p>
       </header>
       <motion.section initial={{ opacity: 0, y: 60 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.38, ease: [.15,.26,0,1] }} className="mt-0 gap-10 flex flex-col lg:ml-100">
         <div className="flex flex-col gap-1">

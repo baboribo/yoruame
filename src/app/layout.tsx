@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "@/constants/style/index.css";
+import "@/constants/style/font.css";
 import Gnb from "@/components/gnb";
-import ChildMotion from "@/components/childmotion"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   title: "Yoruame",
   description: "A personal site by mny29",
   icons: {
-    icon: "/assets/favicons/favicon-bg-none.png"
-  }
+    icon: "/assets/favicons/favicon-bg-none.avif",
+  },
 };
 
 export default function RootLayout({
@@ -27,16 +27,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
-    <html lang="ko-KR">
+    <html>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Gnb />
-        <ChildMotion>
-          {children}
-        </ChildMotion>
+        {children}
       </body>
     </html>
   );

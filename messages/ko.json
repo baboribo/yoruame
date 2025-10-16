@@ -1,0 +1,21 @@
+{
+  "home": {
+    "title": "홈"
+  },
+  "creatives": {
+    "title": "크리에이티브",
+    "description": "만든 것들을 모아둔 페이지예요."
+  },
+  "font-size": {
+    "title": "폰트 크기",
+    "description": "m_ny29*에서 쓰이는 폰트 크기들을 모아둔 페이지입니다."
+  },
+  "notFound": {
+    "title": "원하시는 걸 찾지 못했어요",
+    "description": "경로로 진입해서 찾아봤지만, 나오는 건 먼지 뿐이네요.<br />(에러 코드: 404)"
+  },
+  "noContents": {
+    "title": "음... 뭔가 비어있어요",
+    "description": "아직 이곳엔 아무것도 없지만, 곧 멋진 콘텐츠가 채워질 거예요."
+  }
+}

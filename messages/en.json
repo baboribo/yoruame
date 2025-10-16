@@ -1,0 +1,21 @@
+{
+  "home": {
+    "title": "Home"
+  },
+  "creatives": {
+    "title": "Creatives",
+    "description": "A page that gathers all the things I've made."
+  },
+  "font-size": {
+    "title": "Font Size",
+    "description": "A page that collects all the font sizes used in m_ny29*."
+  },
+  "notFound": {
+    "title": "Couldn't find what you're looking for",
+    "description": "We searched through the path, but all we found was dust.<br />(Error code: 404)"
+  },
+  "noContents": {
+    "title": "Hmm... looks a bit empty",
+    "description": "There's nothing here yet, but awesome content will fill this space soon."
+  }
+}

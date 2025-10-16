@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+    /* 기본 화이트 */
+    --background: #0f0e12;
+    --foreground: #ededed;
+}
+
+@theme inline {
+    /* 이게 도대체 뭘까. 베리어블 같은 거 같은데, 잘 모르겠다. */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+    /* 다크모드 */
+    :root {
+        --background: #0f0e12;
+        --foreground: #ededed;
+    }
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "SUIT Variable", "Shorai Sans", Arial, Helvetica, sans-serif;
+}
