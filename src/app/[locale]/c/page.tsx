@@ -24,6 +24,8 @@ export default function MyCreative() {
             <Link href="https://sora.yume.place">
               <Image
                 className="w-100 border-1 border-gray-700 hover:border-gray-300 ease-in-out transition-all rounded-[10px]"
+                width={100}
+                height={100}
                 src="/img/my-creative/tenki/preview.png"
                 alt="Tenki 미리보기 화면"
               />

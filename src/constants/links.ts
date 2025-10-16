@@ -1,4 +1,8 @@
 // links
+export const gnb = {
+  avatarSrc: "/img/avatar/Im-just-watching.jpg",
+};
+
 export const notFoundLinks = {
   iconLink:
     "https://tensor.art/images/825657422271211978?post_id=825657422267017676",

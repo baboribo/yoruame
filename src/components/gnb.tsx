@@ -1,7 +1,7 @@
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import { gnb } from "@/constants/links";
 
 export default function Gnb() {
   const t = useTranslations();
@@ -11,9 +11,9 @@ export default function Gnb() {
       <div className="flex pt-2 pb-2 pl-6 pr-6 w-full justify-between items-center">
         <div className="flex gap-4 items-center">
           <Link href="/" className="flex gap-4 items-center">
-            <Image
+            <img
               className="w-8.5 h-8.5 rounded-4xl"
-              src="/img/avatar/Im-just-watching.jpg"
+              src={gnb.avatarSrc}
               alt="profile"
             />
             <div className="flex gap-2 items-center">
