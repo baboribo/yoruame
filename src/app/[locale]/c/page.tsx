@@ -2,8 +2,9 @@
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
-export default function mycreative() {
+export default function MyCreative() {
   const t = useTranslations("creatives");
 
   return (
@@ -21,9 +22,10 @@ export default function mycreative() {
         <ul className="w-fit">
           <li>
             <Link href="https://sora.yume.place">
-              <img
+              <Image
                 className="w-100 border-1 border-gray-700 hover:border-gray-300 ease-in-out transition-all rounded-[10px]"
                 src="/img/my-creative/tenki/preview.png"
+                alt="Tenki 미리보기 화면"
               />
               <div className="flex flex-col gap-1 ml-1 mt-2 mb-2 mr-1">
                 <h4>Tenki</h4>

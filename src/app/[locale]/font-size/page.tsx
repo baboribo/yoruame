@@ -2,7 +2,7 @@
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 
-export default function fontsizes() {
+export default function FontSizes() {
   const t = useTranslations("font-size");
 
   return (

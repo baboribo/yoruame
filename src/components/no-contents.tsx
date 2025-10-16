@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { noContentsLinks } from "@/constants/links";
 import { useTranslations } from "next-intl";
 
-export default function nce() {
+export default function NoContentPage() {
   const t = useTranslations("noContents");
 
   return (
