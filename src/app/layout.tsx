@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "@/constants/style/index.css";
 import "@/constants/style/font.css";
 import Gnb from "@/components/gnb";
+import { siteMetadata } from "@/constants/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,13 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Yoruame",
-  description: "A personal site by mny29",
-  icons: {
-    icon: "/assets/favicons/favicon-bg-none.avif",
-  },
-};
+export const metadata: Metadata = siteMetadata; // [1]
 
 export default function RootLayout({
   children,
@@ -38,3 +33,8 @@ export default function RootLayout({
     </html>
   );
 }
+
+/**
+ * Footnotes
+ * [1] Reuses the centralized metadata definition to keep page metadata synchronized with other surfaces.
+ */

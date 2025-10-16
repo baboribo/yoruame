@@ -10,6 +10,9 @@
     "title": "Font Size",
     "description": "A page that collects all the font sizes used in m_ny29*."
   },
+  "links": {
+    "weather": "Weather"
+  },
   "notFound": {
     "title": "Couldn't find what you're looking for",
     "description": "We searched through the path, but all we found was dust.<br />(Error code: 404)"

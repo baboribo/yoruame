@@ -1,13 +1,12 @@
 // links
 export const gnb = {
-  avatarSrc: "/img/avatar/Im-just-watching.jpg",
   navLinks: [
     { href: "/", messageKey: "home.title" },
     { href: "/c", messageKey: "creatives.title" },
     { href: "/font-size", messageKey: "font-size.title" },
   ],
   quickLinks: [
-    { href: "https://sora.yume.place", label: "날씨" },
+    { href: "https://sora.yume.place", messageKey: "links.weather" },
   ],
   socialLinks: [
     { href: "https://github.com/baboribo", icon: "github", label: "GitHub" },
