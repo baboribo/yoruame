@@ -1,12 +1,12 @@
 import { getRequestConfig } from "next-intl/server";
-import { routing } from "./routing";
+import { isLocale, routing } from "./routing";
 
 export default getRequestConfig(async ({ requestLocale }) => {
   // 이것은 일반적으로 '[locale]' 세그먼트에 해당합니다
   let locale = await requestLocale;
 
   // 유효한 locale이 사용되었는지 확인합니다
-  if (!locale || !routing.locales.includes(locale as any)) {
+  if (!locale || !isLocale(locale)) {
     locale = routing.defaultLocale;
   }
 

@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
+import { isLocale } from "@/i18n/routing";
 
 export default async function RootLayout({
   children,
@@ -13,7 +13,7 @@ export default async function RootLayout({
   const { locale } = await params;
 
   // 들어오는 'locale'이 유효한지 확인합니다.
-  if (!routing.locales.includes(locale as any)) {
+  if (!isLocale(locale)) {
     notFound();
   }
 
