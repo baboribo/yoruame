@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Gnb from "@/components/gnb";
+import LocaleAttributes from "@/components/locale-attributes";
 import { isLocale } from "@/i18n/routing";
 
 export default async function RootLayout({
@@ -23,18 +24,16 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          <Gnb /> {/* [1] */}
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <LocaleAttributes locale={locale} /> {/* [1] */}
+      <Gnb /> {/* [2] */}
+      {children}
+    </NextIntlClientProvider>
   );
 }
 
 /**
  * Footnotes
- * [1] Ensures the global navigation receives the i18n context before rendering client-side hooks.
+ * [1] Hydrates the document-level language attribute to match the active locale, avoiding hydration mismatches without duplicating the root layout shell.
+ * [2] Ensures the global navigation receives the i18n context before rendering client-side hooks.
  */
