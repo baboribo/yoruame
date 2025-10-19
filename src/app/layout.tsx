@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "@/constants/style/index.css";
 import "@/constants/style/font.css";
 import Gnb from "@/components/gnb";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,11 @@ export default function RootLayout({
       >
         <Gnb />
         {children}
+        <Script
+          src="https://app.rybbit.io/api/script.js" // o-4 is not
+          data-site-id="process.env.RYBBIT_ID"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
