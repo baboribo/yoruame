@@ -37,7 +37,7 @@ export default function RootLayout({
         {children}
         <Script
           src="https://app.rybbit.io/api/script.js" // o-4 is not
-          data-site-id="process.env.NEXT_PUBLIC_RYBBIT_ID"
+          data-site-id={process.env.NEXT_PUBLIC_RYBBIT_ID}
           strategy="afterInteractive"
         />
       </body>
